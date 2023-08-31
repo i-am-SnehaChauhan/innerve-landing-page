@@ -316,7 +316,7 @@ footer{
     display: grid;
 
     grid-template-columns: 2fr 1fr;
-    /* opacity: 0; */
+    opacity: 0;
 }
 
 .left-side{
