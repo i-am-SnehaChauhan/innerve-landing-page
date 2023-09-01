@@ -13,8 +13,8 @@
 body{
     color: #fff;
     font-family: 'Lato', sans-serif;
-    /* overflow-x: hidden;
-    background-color: #141414; */
+    overflow-x: hidden;
+    background-color: #141414;
 }
 .navbar{
     display: flex;
@@ -78,7 +78,7 @@ a{
 section{
     width: 100vw;
     flex-shrink: 0;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .video-section video{
     height: 100vh;
@@ -168,7 +168,7 @@ section{
     position: absolute;
     top: 50px;
     left: 47%;
-    /* z-index: 100; */
+    z-index: 100;
 }
 .box1 .col-2 h1{
     top: 0;
@@ -272,7 +272,7 @@ footer{
     width: 450px;
     position: relative;
      height: 110px;
-    /*overflow: hidden; */
+    overflow: hidden;
 
 }
 
@@ -316,7 +316,7 @@ footer{
     display: grid;
 
     grid-template-columns: 2fr 1fr;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 .left-side{
