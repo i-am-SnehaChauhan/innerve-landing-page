@@ -48,15 +48,15 @@ gsap.to('.txt-bottom',{
 
 const tl = gsap.timeline();
 
-// tl.from('.left-side div',{
-//   y:150,
-//   opacity:0,
-//   stagger:{
-//     amount:.4
-//   },
-//   delay:.5
-// }).from('.right-side',{opacity:0,duration:2},.5)
-// .to('.wrapper' ,{x:-window.innerWidth})
+tl.from('.left-side div',{
+  y:150,
+  opacity:0,
+  stagger:{
+    amount:.4
+  },
+  delay:.5
+}).from('.right-side',{opacity:0,duration:2},.5)
+.to('.wrapper' ,{x:-window.innerWidth})
 
 
 
