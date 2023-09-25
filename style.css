@@ -103,8 +103,8 @@ section{
 .img-container{
     position: absolute;
     top:0;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;    /* vh; */
+    width: 100%;    /*vw;*/
 }
 
 
@@ -157,7 +157,7 @@ section{
 
 .col-3{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly; /*center*/
     gap: 2.5rem;
     flex-wrap: wrap;
     flex: 4;
@@ -299,7 +299,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; /*center*/
 }
 
 
@@ -378,7 +378,7 @@ footer{
 
 
 .text-container{
-    max-width: 260px;
+    max-width: 260px;  
 }
 
 .text-container p{
@@ -411,3 +411,92 @@ footer{
 .fa-arrow-right-long{
     transform: translateX(20px);
 }
+
+
+@media screen and (max-width: 991px){
+    
+    .text-container p{
+        font-size: 70%;
+        height:auto;
+        /* max-width: 991px; */
+    }
+    .tv{
+        font-size: 55%;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .text-content {
+        font-size: 10px;
+        padding: 20%;
+
+    }
+    .v-container{
+        margin-top: 20px;
+        /* flex-direction: column; */
+        
+    }
+    .left-side{
+        padding: 2rem;
+    }
+
+    .text-container{
+        max-width: 100%;
+        
+    }
+    .right-side{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+
+
+
+/* Media query for small mobile devices (max-width: 468px) */
+@media screen and (max-width: 468px) {
+    body {
+        font-size: 50%; 
+    }
+    
+    .video-section video {
+        height: 100vh; 
+    }
+
+    .img-container {
+        width: 100%;
+        height: 100%;
+    }
+    .text-content p {
+        transform: translateY(30px); 
+        /* font-size: 12px;  */
+        letter-spacing: 4px; 
+    }
+
+    .v_container {
+        grid-template-columns: 1fr;
+        gap: 1rem; 
+    }
+
+    .left-side {
+        padding: 2rem; 
+        gap: 1rem; 
+    }
+
+    .right-side {
+        width: 80px; 
+        height: 80px; 
+    }
+
+    .right-side p {
+        top: 35%; 
+        /* font-size: 10px;  */
+    }
+    .text-container p{
+        /* font-size: 14px; */
+    }
+}
+
+
+
