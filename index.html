@@ -10,9 +10,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
 </head>
 
-<body>
+<body onload="myFunction()">
+    <div id="preLoading"> 
+        <div class="loader">
+            <h2 class="zoom">INNERVE'23</h2>
+            <h1 class="scramble">INNERVE</h1>
+            <div class="loading"></div>       
+        </div>
+    </div>
     <!-- <header>
         <nav class="navbar">
             <span></span>
@@ -70,7 +79,7 @@
                         <p>
                             Experiencing a footboall of over 9000 student from all over the country every year, 
                             Innerve is a platform where technical acumen blends with creativity and innovation.
-                            
+
 
                         </p>
                     </div>
@@ -170,9 +179,18 @@
         <div class="btn">instegram</div>
     </footer> -->
 </body>
+<script>
+    var preLoader = document.getElementById('preLoading');
+    function myFunction(){
+        preLoader.style.display = 'none';
+        
+    }
+</script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+<script src="descrambler.js"></script>
 <script src="./script.js"></script>
 
 </html>
