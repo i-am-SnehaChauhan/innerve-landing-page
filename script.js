@@ -28,7 +28,7 @@ gsap.to('.right' ,{
 })
 gsap.to('.left' ,{
   autoAlpha:0,
-  x:-500,
+  x:300,
   duration:1.5,
   scrollTrigger:{
     start:1
@@ -49,14 +49,14 @@ gsap.to('.txt-bottom',{
 const tl = gsap.timeline();
 
 tl.from('.left-side div',{
-  y:150,
+  y:100,
   opacity:0,
   stagger:{
-    amount:.4
-  },
-  delay:.5
-}).from('.right-side',{opacity:0,duration:2},.5)
-.to('.wrapper' ,{x:-window.innerWidth})
+    amount:0.2
+  }
+})
+.from('.right-side',{opacity:0,duration:2},.5)
+// .to('.wrapper' ,{x:-window.innerWidth})
 
 
 
@@ -72,22 +72,22 @@ ScrollTrigger.create({
 
 
 
-gsap.utils.toArray('.col').forEach(image=>{
-  gsap.fromTo(image,{
-    opacity:.3,
-    x:0
-  },{
-    opacity:1,
-    x:-50,
-    scrollTrigger:{
-      trigger:image,
-      start:"10%",
-      stagger:{
-        amount:.4
-      }
-    }
-  })
-})
+// gsap.utils.toArray('.col').forEach(image=>{
+//   gsap.fromTo(image,{
+//     opacity:.3,
+//     x:0
+//   },{
+//     opacity:1,
+//     x:-50,
+//     scrollTrigger:{
+//       trigger:image,
+//       start:"10%",
+//       stagger:{
+//         amount:.4
+//       }
+//     }
+//   })
+// })
 
 const timeline = gsap.timeline();
 

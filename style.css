@@ -97,7 +97,7 @@ section{
     width: 100vw;
     object-fit: cover;
     z-index: -2;
-    position: relative;
+    /* position: relative; */
 }
 
 .img-container{
@@ -378,7 +378,7 @@ footer{
 
 
 .text-container{
-    max-width: 260px;  
+    max-width: 450px;  
 }
 
 .text-container p{
@@ -448,6 +448,9 @@ footer{
         width: 100px;
         height: 100px;
     }
+    .tv .bg{
+        font-size: 5rem;
+    }
 }
 
 
@@ -473,13 +476,39 @@ footer{
         /* font-size: 12px;  */
         letter-spacing: 4px; 
     }
-
+    .img-txt{
+        align-items: center;
+    }
+    .img_txt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .title {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    text-content .title.bg.left{
+        margin-bottom: 10px;
+    }
+    
+    .text-content .title.bg.left span {
+        font-size: 5rem; /* Adjust the font size for "Reality" */
+    }
+    
+    .text-content .title.bg.right span {
+        font-size: 5rem; /* Adjust the font size for "Dream" */
+        align-items: center;
+        margin-right: 5rem;
+    }
     .v_container {
         grid-template-columns: 1fr;
         gap: 1rem; 
     }
 
     .left-side {
+        width: auto;
         padding: 2rem; 
         gap: 1rem; 
     }
@@ -491,10 +520,13 @@ footer{
 
     .right-side p {
         top: 35%; 
-        /* font-size: 10px;  */
+       
     }
     .text-container p{
-        /* font-size: 14px; */
+        font-size: 14px;
+    }
+    .tv .bg{
+        font-size: 4rem;
     }
 }
 
