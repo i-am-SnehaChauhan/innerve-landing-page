@@ -223,6 +223,23 @@
   // Check the initial scroll position (in case the page is loaded partway down)
   checkScroll();
 </script>
+<script>
+  const pageHeight = document.documentElement.scrollHeight;
+
+  const scrollThreshold = pageHeight * 0.55;
+
+  function handleScroll() {
+    const scrollPosition = window.scrollY || window.pageYOffset;
+
+    if (scrollPosition >= scrollThreshold) {
+      window.scrollTo(0, scrollThreshold);
+    }
+  }
+
+  // Attach the scroll event listener
+  window.addEventListener("scroll", handleScroll);
+
+</script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
