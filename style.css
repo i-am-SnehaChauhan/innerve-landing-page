@@ -620,15 +620,22 @@ footer {
         /* Adjust the font size for "Reality" */
     }
 
-    .text-content .img-txt .title.bg.right {
-        text-align: center;
-        /* Optional: Center the text in case flexbox isn't supported */
+    
+    
+
+    
+    .text-content .img_txt .title.bg.right {
+        text-align: center; /* Optional: Center the text in case flexbox isn't supported */
+        position: relative;
+        top: 0;
+        margin-top: 1px;
+        width: 100vw;
+        left: 0;
         margin-left: 0px;
     }
 
     .text-content .title.bg.right span {
-        font-size: 5rem;
-        /* Adjust the font size for mobile */
+        font-size: 3.5rem; /* Adjust the font size for mobile */
     }
 
     .v_container {
