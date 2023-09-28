@@ -1,32 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
 
 @font-face {
     font-family: w;
     src: url(./fonts/WanoQuin-ExtraBold.otf);
 }
 
-
-body{
+body {
     color: #fff;
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
     background-color: #141414;
 }
 
-#preLoading{
-    position:fixed;
+#preLoading {
+    position: fixed;
     width: 100%;
     height: 100vh;
     z-index: 99999;
 }
 
-.loader{
+.loader {
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -34,31 +33,31 @@ body{
     animation: pulse 3s;
 }
 
-.zoom{
-   position:absolute;
+.zoom {
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate( -50%, -50% ) rotate(-7deg);
+    transform: translate(-50%, -50%) rotate(-7deg);
     font-size: 13vw;
     font-family: toony;
     -webkit-text-stroke-width: 0.09vh;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-color: #fff;
-     outline: none;
-     font-weight: 200; 
+    outline: none;
+    font-weight: 200;
 }
 
-.loader h1{
+.loader h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50% , -50%) rotate(-7deg);
+    transform: translate(-50%, -50%) rotate(-7deg);
     font-size: 5vw;
     font-family: toony;
     color: #fff;
 }
 
-.loading{
+.loading {
     position: relative;
     left: 50%;
     width: 50%;
@@ -68,10 +67,10 @@ body{
     background-color: #fff;
     border-radius: 4px;
     overflow: hidden;
-    
+
 }
 
-.loading::after{
+.loading::after {
     content: " ";
     position: absolute;
     bottom: 10%;
@@ -80,62 +79,63 @@ body{
     animation: load 3s;
 }
 
-@keyframes load{
-    0%{
+@keyframes load {
+    0% {
         width: 0;
         background-color: #040D12;
     }
 
-    25%{
+    25% {
         width: 25%;
         background-color: #1f1141;
     }
 
-    50%{
+    50% {
         width: 50%;
         background-color: #d0bdf4;
     }
 
-    75%{
+    75% {
         width: 75%;
         background-color: #d2d2d2;
     }
 
-    100%{
+    100% {
         width: 100%;
         background-color: rgb(250, 195, 8);
     }
 
 }
 
-@keyframes pulse{
-    0%{
-        
+@keyframes pulse {
+    0% {
+
         background-color: #1f1141;
     }
 
-    25%{
-        
+    25% {
+
         background-color: #1f1141;
     }
 
-    50%{
-        
+    50% {
+
         background-color: #d0bdf4;
     }
 
-    75%{
-        
+    75% {
+
         background-color: #A2678A;
     }
 
-    100%{
-        
+    100% {
+
         background-color: rgb(250, 195, 8);
     }
 
 }
-.navbar{
+
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -147,44 +147,44 @@ body{
     z-index: 1000;
 }
 
-.navbar span{
+.navbar span {
     position: absolute;
     bottom: 0;
     height: 2px;
     width: 50px;
-    background: linear-gradient(90deg , transparent , #fff);
+    background: linear-gradient(90deg, transparent, #fff);
     animation: animate 5s infinite linear;
 }
 
-
 @keyframes animate {
-    0%{
+    0% {
         left: 0;
         transform: translate(-100%);
     }
-    100%{
+
+    100% {
         left: 100%;
         transform: translate(0%);
     }
 }
 
-.logo{
+.logo {
     text-transform: capitalize;
     font-size: 30px;
     cursor: pointer;
     font-family: w;
 }
 
-li{
+li {
     list-style: none;
 }
 
-a{
+a {
     color: #fff;
     text-decoration: none;
 }
 
-.menu{
+.menu {
     display: flex;
     gap: 5rem;
     text-transform: uppercase;
@@ -192,24 +192,22 @@ a{
 }
 
 
-.btn{
+.btn {
     font-weight: 500;
     text-transform: uppercase;
 }
 
-
-
-.wrapper{
+.wrapper {
     display: flex;
 }
 
-section{
+section {
     width: 100vw;
     flex-shrink: 0;
     overflow: hidden;
 }
 
-.video-section video{
+.video-section video {
     height: 100vh;
     width: 100vw;
     object-fit: cover;
@@ -217,89 +215,90 @@ section{
     /* position: relative; */
 }
 
-.img-container{
+.img-container {
     position: absolute;
-    top:0;
-    height: 100%;    /* vh; */
-    width: 100%;    /*vw;*/
+    top: 0;
+    height: 100%;
+    /* vh; */
+    width: 100%;
+    /*vw;*/
 }
 
-
-.img{
+.img {
     object-fit: cover;
     height: 100%;
     width: 100%;
 
 }
 
-
-
-.section{
+.section {
     background-color: #141414;
     padding: 7rem;
 }
 
-.boxes-container{
+.boxes-container {
     display: flex;
     flex-direction: column;
     gap: 8rem;
 }
 
-.columns{
+.columns {
     display: flex;
     gap: 1.5rem;
     position: relative;
 }
 
-.col img{
+.col img {
     object-fit: cover;
 }
 
-
-.col-1{
+.col-1 {
     display: flex;
     gap: 1.5rem;
     flex: 5;
 }
-.box1 .col-1 img:first-child{
+
+.box1 .col-1 img:first-child {
     width: 150px;
     height: 180px;
     transform: translateY(-30px);
 }
 
-.box1 .col-1 img:nth-child(2){
+.box1 .col-1 img:nth-child(2) {
     width: 380px;
     height: 430px;
 }
 
-.col-3{
+.col-3 {
     display: flex;
-    justify-content: space-evenly; /*center*/
+    justify-content: space-evenly;
+    /*center*/
     gap: 2.5rem;
     flex-wrap: wrap;
     flex: 4;
 }
 
-.box1 .col-3 img:first-child{
+.box1 .col-3 img:first-child {
     width: 320px;
     height: 170px;
 
 }
 
-.box1 .col-3 img:nth-child(2){
+.box1 .col-3 img:nth-child(2) {
     width: 150px;
 }
-.box1 .col-3 img:nth-child(3){
+
+.box1 .col-3 img:nth-child(3) {
     width: 200px;
     height: 200px;
 }
 
-.col-2{
+.col-2 {
     margin: auto;
     flex: 1.5;
 }
 
-.col-2 h1{
+.col-2 h1 {
     font-family: w;
     font-size: 100px;
     text-transform: capitalize;
@@ -308,98 +307,102 @@ section{
     left: 47%;
     z-index: 100;
 }
-.box1 .col-2 h1{
+
+.box1 .col-2 h1 {
     top: 0;
 }
 
 
-.col-2 span{
+.col-2 span {
     font-size: 8px;
     text-transform: uppercase;
-    letter-spacing:3px;
+    letter-spacing: 3px;
     opacity: .7;
 }
 
 
-.line{
+.line {
     height: 1px;
     width: 50px;
     background-color: rgba(255, 255, 255, .1);
     margin: 2rem 0;
 }
 
-.text-box p{
+.text-box p {
     font-size: 12px;
     line-height: 1.9;
     padding-bottom: 1rem;
     opacity: .7;
-    
+
 }
 
-.box2 .col-1 img:first-child{
+.box2 .col-1 img:first-child {
     width: 200px;
     height: 250px;
     transform: translateY(200px);
 }
 
-
-.box2 .col-1 img:nth-child(2){
+.box2 .col-1 img:nth-child(2) {
     height: 380px;
     width: 300px;
 }
-.box2 .col-3 img:nth-child(1){
+
+.box2 .col-3 img:nth-child(1) {
     height: 300px;
     width: 220px;
 }
 
-.box2 .col-3 img:nth-child(2){
+.box2 .col-3 img:nth-child(2) {
     width: 180px;
     height: 200px;
     align-self: flex-end;
 }
-.box2 .col-3 img:nth-child(3){
+
+.box2 .col-3 img:nth-child(3) {
     width: 380px;
     height: 200px;
     transform: translateX(80px);
 }
 
-
-.box3 .col-1{
+.box3 .col-1 {
     display: flex;
     flex-wrap: wrap;
 }
 
-.box3 .col-1 img:nth-child(1){
+.box3 .col-1 img:nth-child(1) {
     width: 200px;
     height: 280px;
     transform: translateX(30px);
-    
-    
+
+
 }
-.box3 .col-1 img:nth-child(2){
+
+.box3 .col-1 img:nth-child(2) {
     width: 180px;
     height: 200px;
     margin-left: 80px;
     align-self: center;
-    
+
 }
-.box3 .col-1 img:nth-child(3){
+
+.box3 .col-1 img:nth-child(3) {
     width: 280px;
     height: 180px;
-    
+
 }
-.box3 .col-1 img:nth-child(4){
+
+.box3 .col-1 img:nth-child(4) {
     width: 250px;
     height: 180px;
     transform: translateY(-30px);
 }
 
-.box3 .col-3 img{
+.box3 .col-3 img {
     width: 400px;
     height: auto;
 }
 
-footer{
+footer {
     background-color: #141414;
     display: flex;
     justify-content: space-between;
@@ -407,8 +410,7 @@ footer{
     border-top: 1px solid rgba(255, 255, 255, .1);
 }
 
-
-.text-content{
+.text-content {
     position: absolute;
     top: 0;
     height: 100vh;
@@ -416,11 +418,11 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /*center*/
+    justify-content: center;
+    /*center*/
 }
 
-
-.title{
+.title {
     font-family: w;
     width: 450px;
     position: relative;
@@ -428,34 +430,34 @@ footer{
     overflow: hidden;
 }
 
-.bg{
+.bg {
     font-size: 100px;
 }
 
-.sm{
+.sm {
     font-size: 35px;
     height: 40px;
 }
 
-.left{
+.left {
     left: -25%;
 }
 
-.right{
+.right {
     top: 50px;
     left: 75%;
 }
 
-.title span{
+.title span {
     position: absolute;
 }
 
-.n{
+.n {
     z-index: -1;
-    
+
 }
 
-.text-content p{
+.text-content p {
     transform: translateY(150px);
     text-transform: uppercase;
     font-size: 12px;
@@ -463,7 +465,7 @@ footer{
     font-weight: 300;
 }
 
-.v_container{
+.v_container {
     position: absolute;
     top: 0;
     height: 100vh;
@@ -473,8 +475,7 @@ footer{
     /* opacity: 0; */
 }
 
-
-.left-side{
+.left-side {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -482,30 +483,27 @@ footer{
     gap: 5rem;
 }
 
-.tv{
+.tv {
     font-family: w;
     display: flex;
     text-transform: capitalize;
 }
 
-.bottom{
+.bottom {
     transform: translateY(70px);
 }
 
-
-
-.text-container{
-    max-width: 450px;  
+.text-container {
+    max-width: 450px;
 }
 
-.text-container p{
+.text-container p {
     padding-bottom: 1rem;
     line-height: 1.4;
     opacity: .8;
 }
 
-
-.right-side{
+.right-side {
     /* background-color: blue; */
     margin: auto;
     width: 150px;
@@ -517,7 +515,7 @@ footer{
     position: relative;
 }
 
-.right-side p{
+.right-side p {
     position: absolute;
     top: 45%;
     left: -15%;
@@ -525,130 +523,140 @@ footer{
     font-size: 14px;
 }
 
-.fa-arrow-right-long{
+.fa-arrow-right-long {
     transform: translateX(20px);
 }
 
+@media screen and (max-width: 991px) {
 
-@media screen and (max-width: 991px){
-    
-    .text-container p{
+    .text-container p {
         font-size: 70%;
-        height:auto;
+        height: auto;
         /* max-width: 991px; */
     }
-    .tv{
+
+    .tv {
         font-size: 55%;
     }
 
 }
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 768px) {
     .text-content {
         font-size: 10px;
         padding: 20%;
 
     }
-    .v-container{
+
+    .v-container {
         margin-top: 20px;
         /* flex-direction: column; */
-        
+
     }
-    .left-side{
+
+    .left-side {
         padding: 2rem;
     }
 
-    .text-container{
+    .text-container {
         max-width: 100%;
-        
+
     }
-    .right-side{
+
+    .right-side {
         width: 100px;
         height: 100px;
     }
-    .tv .bg{
+
+    .tv .bg {
         font-size: 5rem;
     }
 }
 
 
-
-
-
 /* Media query for small mobile devices (max-width: 468px) */
 @media screen and (max-width: 468px) {
     body {
-        font-size: 50%; 
+        font-size: 50%;
     }
-    
+
     .video-section video {
-        height: 100vh; 
+        height: 100vh;
     }
 
     .img-container {
         width: 100%;
         height: 100%;
     }
+
     .text-content p {
-        transform: translateY(30px); 
+        transform: translateY(30px);
         /* font-size: 12px;  */
-        letter-spacing: 4px; 
+        letter-spacing: 4px;
     }
-    .img-txt{
+
+    .img-txt {
         align-items: center;
     }
+
     .img_txt {
         display: flex;
         flex-direction: column;
         /* align-items: center; */
-        
+
     }
+
     .title {
         text-align: center;
         margin-bottom: 15px;
     }
-    text-content .title.bg.left{
+
+    text-content .title.bg.left {
         margin-bottom: 10px;
     }
-    
+
     .text-content .title.bg.left span {
-        font-size: 5rem; /* Adjust the font size for "Reality" */
+        font-size: 5rem;
+        /* Adjust the font size for "Reality" */
     }
-    
+
     .text-content .img-txt .title.bg.right {
-        text-align: center; /* Optional: Center the text in case flexbox isn't supported */
+        text-align: center;
+        /* Optional: Center the text in case flexbox isn't supported */
         margin-left: 0px;
     }
 
     .text-content .title.bg.right span {
-        font-size: 5rem; /* Adjust the font size for mobile */
+        font-size: 5rem;
+        /* Adjust the font size for mobile */
     }
+
     .v_container {
         grid-template-columns: 1fr;
-        gap: 1rem; 
+        gap: 1rem;
     }
 
     .left-side {
         width: auto;
-        padding: 2rem; 
-        gap: 1rem; 
+        padding: 2rem;
+        gap: 1rem;
     }
 
     .right-side {
-        width: 80px; 
-        height: 80px; 
+        width: 80px;
+        height: 80px;
     }
 
     .right-side p {
-        top: 35%; 
-       
+        top: 35%;
+
     }
-    .text-container p{
+
+    .text-container p {
         font-size: 14px;
     }
-    .tv .bg{
+
+    .tv .bg {
         font-size: 4rem;
     }
 }
-
-
-

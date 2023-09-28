@@ -29,7 +29,7 @@ gsap.to('.right', {
 
 gsap.to('.left', {
   autoAlpha: 0,
-  x: 300,
+  x: -500,
   duration: 1.5,
   scrollTrigger: {
     start: 1
@@ -46,17 +46,6 @@ gsap.to('.txt-bottom', {
 });
 
 const tl = gsap.timeline();
-tl.from('.left-side div', {
-    y: 100,
-    opacity: 0,
-    stagger: {
-        amount: 0.2
-    }
-})
-.from('.right-side', {
-    opacity: 0,
-    duration: 2
-}, 0.5);
 
 ScrollTrigger.create({
   animation: tl,
@@ -68,16 +57,33 @@ ScrollTrigger.create({
   ease: "ease"
 });
 
+gsap.utils.toArray('.col').forEach(image => {
+  gsap.fromTo(image, {
+    opacity: .3,
+    x: 0
+  }, {
+    opacity: 1,
+    x: -50,
+    scrollTrigger: {
+      trigger: image,
+      start: "10%",
+      stagger: {
+        amount: .4
+      }
+    }
+  });
+});
+
 const timeline = gsap.timeline();
+
 timeline.from('.title span', {
-    y: 150,
-    skewY: 7,
-    duration: 3
-})
-.from('.txt-bottom', {
-    letterSpacing: -10,
-    opacity: 0,
-    duration: 3
+  y: 150,
+  skewY: 7,
+  duration: 3
+}).from('.txt-bottom', {
+  letterSpacing: -10,
+  opacity: 0,
+  duration: 3,
 });
 
 // Preloader Script
@@ -87,17 +93,38 @@ $(document).ready(function () {
 
   // Loader Animation
   const loaderTimeline = gsap.timeline();
-  loaderTimeline.to(".loading", {
-    opacity: 0,
-    delay: 2.5,
-  })
-  .to(".loader", {
-    opacity: 0,
-    duration: 1,
-    ease: "expo.easeinout",
-  })
-  .to(".loader", {
-    y: "-100%",
-    duration: 1,
-  });
+  loaderTimeline
+    .to(".loading", {
+      opacity: 0,
+      delay: 2.5,
+    })
+    .to(".loader", {
+      opacity: 0,
+      duration: 1,
+      ease: "expo.easeinout",
+    })
+    .to(".loader", {
+      y: "-100%",
+      duration: 1,
+    });
+});
+
+// Hide the desired content initially
+const hideContent = gsap.timeline();
+hideContent.to(".text-content", {
+  autoAlpha: 0,
+  duration: 0
+});
+
+// Create a ScrollTrigger to reveal the content after 1/6th scroll
+ScrollTrigger.create({
+  trigger: '.video-section',
+  start: "top top",
+  end: "top 1/6",
+  onEnter: function () {
+    gsap.to(".text-content", {
+      autoAlpha: 1,
+      duration: 1
+    });
+  }
 });

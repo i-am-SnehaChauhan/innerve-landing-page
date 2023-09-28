@@ -2,27 +2,25 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body onload="myFunction()">
-    <div id="preLoading"> 
-        <div class="loader">
-            <h2 class="zoom">INNERVE'23</h2>
-            <h1 class="scramble">INNERVE</h1>
-            <div class="loading"></div>       
-        </div>
+  <div id="preLoading">
+    <div class="loader">
+      <h2 class="zoom">INNERVE'23</h2>
+      <h1 class="scramble">INNERVE</h1>
+      <div class="loading"></div>
     </div>
-    <!-- <header>
+  </div>
+  <!-- <header>
         <nav class="navbar">
             <span></span>
             <div class="logo">Innerve'23</div>
@@ -36,60 +34,62 @@
         </nav>
     </header> -->
 
-    <div class="wrapper">
-        <section class="video-section">
-            <div class="video-container">
-                <video src="./media/TechCity.mp4" autoplay loop muted></video>
-            </div>
-            <div class="img-container">
-                <img src="./media/window.png" alt="" class="img">
-            </div>
+  <div class="wrapper">
+    <section class="video-section">
+      <div class="video-container">
+        <video src="./media/TechCity.mp4" autoplay loop muted></video>
+      </div>
+      <div class="img-container">
+        <img src="./media/window.png" alt="" class="img" />
+      </div>
 
-            <div class="text-content">
-                <div class="img_txt">
-                    <div class="title sm left">
-                        <span>between</span>
-                    </div>
-                    <div class="title bg left">
-                        <span>Reality</span>
-                    </div>
-                    <div class="title bg right n">
-                        <span>&</span>
-                    </div>
-                    <div class="title bg right">
-                        <span>Dream</span>
-                    </div>
-                </div>
-                <p class="txt-bottom">
-                    shots that will change your mind
+      <div class="text-content">
+        <div class="img_txt">
+          <div class="title sm left">
+            <span>between</span>
+          </div>
+          <div class="title bg left">
+            <span>Reality</span>
+          </div>
+          <div class="title bg right n">
+            <span>&</span>
+          </div>
+          <div class="title bg right">
+            <span>Dream</span>
+          </div>
+        </div>
+        <p class="txt-bottom">shots that will change your mind</p>
+      </div>
+
+      <div class="container">
+        <div class="hidden-element" id="hiddenElement">
+          <div class="v_container">
+            <div class="left-side">
+              <div class="tv">
+                <div class="bg">INNERVE</div>
+                <!-- <div class="bg bottom">envelope</div> -->
+              </div>
+              <div class="text-container">
+                <p>
+                  Innerve is an annual technical fest of Indira Gandhi Delhi
+                  Technical University for Women (IGDTUW), catering to the
+                  interests of numerous students across all fields.
                 </p>
+                <p>
+                  Experiencing a footfall of over 9000 students from all over
+                  the country every year, Innerve is a platform where
+                  technical acumen blends with creativity and innovation.
+                </p>
+              </div>
             </div>
-
-            <div class="v_container">
-                <div class="left-side">
-                    <div class="tv">
-                        <div class="bg">INNERVE</div>
-                        <!-- <div class="bg bottom">envelope</div> -->
-                    </div>
-                    <div class="text-container">
-                        <p>
-                            Innerve is a annual technical fest of Indira Gandhi Delhi Technical University for Women (IGDTUW),
-                            catering to the interests of numerous student across all fields.
-                        </p>
-                        <p>
-                            Experiencing a footboall of over 9000 student from all over the country every year, 
-                            Innerve is a platform where technical acumen blends with creativity and innovation.
-
-
-                        </p>
-                    </div>
-                </div>
-                <div class="right-side">
-                    <p>explore works <i class="fa-solid fa-arrow-right-long"></i></p>
-                </div>
-            </div>
-        </section>
-        <!-- <section class="section">
+            <!-- <div class="right-side">
+                            <p>explore works <i class="fa-solid fa-arrow-right-long"></i></p>
+                        </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="section">
             <div class="boxes-container">
                 <div class="columns box1">
                     <div class="col col-1">
@@ -170,23 +170,61 @@
                 </div>
             </div>
         </section> -->
-       
-    </div>
+  </div>
 
-
-    <!-- <footer>
+  <!-- <footer>
         <div class="logo"><a href="#">eraf</a></div>
         <div class="btn">instegram</div>
     </footer> -->
 </body>
 <script>
-    var preLoader = document.getElementById('preLoading');
-    // function myFunction(){
-    //     preLoader.style.display = 'none';
-        
-    // }
+  var preLoader = document.getElementById("preLoading");
+  // function myFunction(){
+  //     preLoader.style.display = 'none';
+
+  // }
 </script>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+  // Function to animate the revealing of the hidden content
+  function revealContent() {
+    const hiddenContent = document.querySelector(".hidden-content");
+    gsap.from(hiddenContent, {
+      opacity: 0,
+      y: 20,
+      duration: 1,
+      ease: "power3.out",
+      onComplete: () => {
+        hiddenContent.style.opacity = 1; // Ensure opacity is set to 1
+      },
+    });
+  }
+
+  // Get a reference to the hidden element
+  const hiddenElement = document.getElementById("hiddenElement");
+
+  // Function to check if the user has scrolled past 1/6th of the page
+  function checkScroll() {
+    // Calculate the scroll position for revealing the element after 1/6th scroll
+    const scrollPosition = window.scrollY || window.pageYOffset;
+    const revealPosition = window.innerHeight / 6;
+
+    // If the user has scrolled past the reveal position, reveal the element
+    if (scrollPosition > revealPosition) {
+      hiddenElement.style.display = "block";
+      revealContent(); // Animate the revealing of the content
+    } else {
+      hiddenElement.style.display = "none";
+    }
+  }
+
+  // Attach the scroll event listener
+  window.addEventListener("scroll", checkScroll);
+
+  // Check the initial scroll position (in case the page is loaded partway down)
+  checkScroll();
+</script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
