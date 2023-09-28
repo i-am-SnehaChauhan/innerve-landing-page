@@ -83,12 +83,12 @@ body{
 @keyframes load{
     0%{
         width: 0;
-        background-color: #a28089;
+        background-color: #040D12;
     }
 
     25%{
         width: 25%;
-        background-color: #c276f5;
+        background-color: #1f1141;
     }
 
     50%{
@@ -111,12 +111,12 @@ body{
 @keyframes pulse{
     0%{
         
-        background-color: #a28089;
+        background-color: #1f1141;
     }
 
     25%{
         
-        background-color: #c276f5;
+        background-color: #1f1141;
     }
 
     50%{
@@ -126,7 +126,7 @@ body{
 
     75%{
         
-        background-color: #d2d2d2;
+        background-color: #A2678A;
     }
 
     100%{
